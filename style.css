@@ -1,0 +1,248 @@
+
+body,h1,h2,h3,h4,h5,h6{
+    font-family: 'Work Sans', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+/* Header-section */
+.my-header .navbar-brand {
+    font-size: 26px;
+    font-weight: 500;
+}
+.my-header span {
+    color: #fff;
+    background: #657be0;
+    width: 40px;
+    height: 43px;
+    display: inline-block;
+    text-align: center;
+    font-size: 28px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+.my-manu{
+    margin-left: 95px;
+}
+.my-manu .nav-item {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+/* slider-section */
+.slider-section{
+    background: url(./img/mbr-10.jpg) no-repeat center center;
+    padding: 160px 0;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.slider-section::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+.slider-title h4 {
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.slider-title h1{
+    font-size: 45px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+.slider-section .form-control {
+    padding: 18px 25px;
+}
+.slider-section .btn {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 12px;
+    background-color: #5ba533;
+}
+.counter-item h1{
+    font-size: 55px;
+}
+/* About-section */
+.about-test-left {
+    margin-top: 100px;
+}
+}
+.about-test-left p {
+    margin-top: 25px;
+    font-size: 1.28rem;
+    font-weight: 400;
+}
+/* feature-section */
+.feature-section .mb-5.lead {
+    font-size: 25px;
+    margin-bottom: 65px !important;
+}
+.feature-item{
+    height: 300px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
+}
+.feature-img{
+    width: 40%;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+}
+.feature-img img {
+    height: 100%;
+    width: auto !important;
+    max-width: inherit;
+    position: relative;
+    left: -131px;
+}
+.two {
+    position: relative !important;
+    left: -70px !important;
+}
+.three {
+    position: relative !important;
+    left: -16px !important;
+}
+.five {
+    position: relative !important;
+    left: -92px !important;
+}
+.feature-text{
+    width: 60%;
+    padding: 19px;
+}
+/* Portpholio-section */
+.portpholio-item{
+    position: relative;
+}
+.portpholio-item::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:rgba(101, 123, 224, .6);
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+}
+.portpholio-item:hover::after{
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+}
+/* prizing-table-section */
+.prizing-table-item{
+    padding: 40px;
+    transition: .4s;
+}
+.prizing-table-item ul{
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+.prizing-table-item ul li {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.prizing-table-item ul li span {
+    width: 30px;
+    display: inline-block;
+    font-size: 25px;
+    margin-right: 10px;
+    color: #6278df;
+}
+.prizing-item-btn a {
+    border: none;
+    font-size: 24px;
+    font-weight: 600;
+}
+.prizing-table-item:hover .prizing-item-btn a{
+    background: #000;
+    color: white;
+}
+/* Testimonial-section-start */
+.testionial-item span {
+    font-size: 70px;
+    color: #f0f0f0;
+}
+.testionial-bio{
+    width: 213px;
+}
+.testionial-bio img {
+    width: 70px;
+    margin-right: 15px;
+}
+.t-item-info{
+    text-align: left;
+    position: relative;
+    top: 5px;
+}
+/* Team-section-start */
+.team-section .card img {
+    width: 120px;
+    margin-top: -50px;
+    margin-left: 15px;
+}
+.team-section .card .btn{
+    border: none;
+}
+/* Contact-us-sectio */
+.form-item .card{
+    padding: 30px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
+}
+
+/* Responsive Css Strat..............................*/
+@media (max-width:992px) {
+    .navbar {
+        width: 100%;
+        overflow: hidden;
+        padding: 0 20px;
+        margin: 10px 0;
+        box-sizing: border-box;
+    }
+    .my-manu {
+        margin-left: 0px;
+    }
+    .slider-section {
+        padding: 120px 0;
+    }
+    .slider-title h4 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    .slider-title h1 {
+        font-size: 34px;
+        margin-bottom: 23px;
+    }
+    .btn.btn-outline-primary.btn-lg {
+        width: 100px;
+        font-size: 14px;
+    }
+    .about-test-left {
+        margin-top: 0px;
+    }
+    .prizing-item-btn .btn.btn-outline-primary.btn-lg {
+        width: 80%;
+    }
+}
+@media (max-width:576px) {
+    .slider-section .form-control {
+        padding: 10px 20px;
+    }
+    .slider-section .btn {
+        font-size: 22px;
+        padding: 6px;
+    }
+    .about-test-left .lead {
+        font-size: 15px;
+    }
+}
